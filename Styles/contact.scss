@@ -1,0 +1,200 @@
+.contact-us{
+  background-color: #ededed;
+
+  .block-contact{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+    @include max-screen(992px){
+      max-width: 900px;
+    }
+    @include max-screen(812px){
+      max-width: 780px;
+    }
+    @include max-screen(768px){
+      max-width: 700px;
+    }
+    @include max-screen(667px){
+      max-width: 600px;
+    }
+    @include max-screen(568px){
+    max-width: 520px;
+    }
+    @include max-screen(414px){
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+     align-items: center;
+    }
+    .contact-info{
+      text-align: center;
+      max-width: 210px;
+      p{
+      font-size: 18px;
+      font-weight: 400;
+      color: #999999;
+        line-height: 27px;
+        @include max-screen(568px){
+        font-size: 14px;
+        line-height: 22px;
+        }
+      }
+      a{
+        margin: 0 0 34px 0 ;
+        color: #008ed6;
+        @include max-screen(414px){
+          margin: 20px 0 10px 0;
+        }
+      }
+      .fas{
+        font-size: 32px;
+      }
+      .far{
+        font-size: 24px;
+      }
+    }
+  }
+  .form{
+    margin: auto;
+    width: 770px;
+    height: 360px;
+    background-color: #15141a;
+    position: relative;
+    z-index: 2;
+    bottom: -65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @include max-screen(812px){
+      width: 670px;
+      bottom: -15px;
+    }
+    @include max-screen(768px){
+      width: 650px;
+    }
+    @include max-screen(667px){
+      width: 550px;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      height: 420px;
+    }
+    @include max-screen(414px){
+      width: 300px;
+    }
+    .input-block{
+      display: flex;
+      flex-direction: column;
+      input{
+        height: 50px;
+        width: 300px;
+        border: solid 1px #444348;
+        border-radius: 2px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: #444348;
+        text-transform: uppercase;
+        background-color: #15141a;
+        margin: 10px;
+        padding: 0 0 0 20px;
+        @include max-screen(667px){
+          height: 35px;
+        }
+        @include max-screen(414px){
+          width: 250px;
+          font-size: 12px;
+          padding: 0 0 0 15px;
+        }
+      }
+    }
+    textarea{
+      height: 190px;
+      width: 300px;
+      background-color: #15141a;
+      color: #444348;
+      border: solid 1px #444348;
+      border-radius: 2px;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 10px;
+      padding: 20px 0 0 20px;
+      @include max-screen(667px){
+        height: 130px;
+      }
+      @include max-screen(414px){
+        width: 250px;
+        font-size: 12px;
+        padding: 15px 0 0 15px;
+      }
+    }
+    .send-messager{
+     height: 50px;
+      width: 170px;
+      @include max-screen(667px){
+        height: 35px;
+      }
+      @include max-screen(414px){
+        width: 140px;
+      }
+      button{
+        background-color: #008ed6;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        color: white;
+        padding: 20px 35px;
+        text-transform: uppercase;
+        border-radius: 2px;
+        @include max-screen(414px){
+          font-size: 12px;
+          padding: 15px 20px;
+        }
+      }
+    }
+  }
+}
+.map{
+  position: relative;
+  z-index: 1;
+  height: 375px;
+}
+.footer{
+  height: 160px;
+  background-color: #15141a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include max-screen(414px){
+    height: 80px;
+  }
+  a{
+    font-size: 18px;
+    color: #444348;
+    padding: 0 18px;
+    @include max-screen(414px){
+      font-size: 12px;
+      padding: 0 12px;
+    }
+    &:hover{
+      color: #008ed6;
+    }
+  }
+  .copyright{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #444348;
+    text-transform: uppercase;
+    margin: 34px 0 0 0;
+    @include max-screen(414px){
+      font-size: 10px;
+      margin: 24px 0 0 0;
+    }
+  }
+
+}

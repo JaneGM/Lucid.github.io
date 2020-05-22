@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAe;EACb,OAAO,EAAE,IAAI",
+"sources": ["beautiful-device.scss"],
+"names": [],
+"file": "beautiful-device.css"
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACE,2BAAW;EACT,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM",
+"sources": ["block-features.scss"],
+"names": [],
+"file": "block-features.css"
+}

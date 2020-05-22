@@ -1,0 +1,74 @@
+.block-customize {
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 50px 50px 30px;
+  @include max-screen(414px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .customize-info {
+      max-width: 485px;
+    margin: 0 25px 0 0;
+      .info-1 {
+        margin: 0 0 40px 0;
+        .subtitle {
+          color: #008ed6;
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 700;
+          font-size: 14px;
+          text-transform: uppercase;
+          margin: 0 0 25px 0;
+        }
+        .title-black {
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 600;
+          font-size: 36px;
+          margin: 0 0 32px 0;
+          &:after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 44px;
+            background-color: #008ed6;
+            margin-top: 35px;
+            @include max-screen(768px) {
+              margin-top: 25px;
+            }
+          }
+          @include max-screen(768px) {
+            font-size: 32px;
+            margin: 0 0 26px 0;
+          }
+          @include max-screen(414px) {
+            font-size: 30px;
+          }
+          @include max-screen(375px) {
+            font-size: 26px;
+          }
+        }
+        .p-info {
+          font-family: "Source Sans Pro", sans-serif;
+          font-weight: 400;
+          font-size: 18px;
+          color: #999999;
+          line-height: 28px;
+          @include max-screen(667px) {
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  .customize-foto {
+    max-width: 600px;
+    @include max-screen(768px) {
+      max-width: 550px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

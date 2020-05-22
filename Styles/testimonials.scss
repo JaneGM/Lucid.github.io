@@ -1,0 +1,206 @@
+.testimonials{
+  background-image: url("../images/carousel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .block-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 62px 0 0 0;
+    .subtitle {
+      color: #008ed6;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 0 0 25px 0;
+    }
+    .title-white {
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+      color: white;
+      margin: 0 0 32px 0;
+      &:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 44px;
+        background-color: #008ed6;
+        margin-top: 35px;
+        @include max-screen(768px) {
+          margin-top: 25px;
+        }
+      }
+      @include max-screen(768px) {
+        font-size: 32px;
+        margin: 0 0 26px 0;
+      }
+      @include max-screen(414px) {
+        font-size: 30px;
+      }
+      @include max-screen(375px) {
+        font-size: 26px;
+      }
+    }
+  }
+  .carousel{
+    height: 320px;
+    max-width: 1120px;
+    margin: auto;
+    color: white;
+    @include max-screen(1024px){
+      max-width: 980px;
+    }
+    @include max-screen(992px){
+      max-width: 900px;
+    }
+    @include max-screen(812px){
+      max-width: 750px;
+    }
+    @include max-screen(768px){
+      max-width: 600px;
+    }
+    @include max-screen(568px){
+      max-width: 500px;
+    }
+    @include max-screen(414px){
+      max-width: 370px;
+    }
+    @include max-screen(375px){
+      max-width: 340px;
+    }
+    @include max-screen(320px){
+      max-width: 300px;
+    }
+    .block{
+      max-width: 520px;
+      @include max-screen(1024px){
+        max-width: 490px;
+      }
+      @include max-screen(992px){
+        max-width: 400px;
+      }
+      @include max-screen(812px){
+        max-width: 320px;
+      }
+      @include max-screen(768px){
+        max-width: 500px;
+      }
+      @include max-screen(414px){
+        max-width: 350px;
+      }
+      .review{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+        font-style: italic;
+    font-size: 24px;
+    color: white;
+        @include max-screen(414px){
+          font-size: 18px;
+        }
+  }
+      .client-block{
+        display: flex;
+        align-items: center;
+        margin: 30px 0 0 0;
+        .client-foto{
+          height: 60px;
+          width: 60px;
+          margin: 0 25px 0 0;
+
+          img{
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+        .client-info{
+          .client-name{
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 29px;
+          }
+          .client-position{
+            font-family: "Source Sans Pro", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+          }
+        }
+      }
+      }
+  }
+}
+.download{
+  background-color: black;
+  height: 172px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 25px;
+  @include max-screen(768px){
+    display: flex;
+    flex-direction: column;
+  }
+  .motivation{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 36px;
+    color: white;
+    @include max-screen(1024px){
+      font-size:32px ;
+    }
+    @include max-screen(812px){
+      font-size: 26px;
+    }
+    p{
+      font-weight: 600;
+    }
+    span{
+      font-weight: 300;
+    }
+  }
+  .block-btn{
+    .btn{
+      height: 50px;
+      width: 160px;
+      border: solid 1px #434247;
+      border-radius: 2px;
+      padding: 20px 30px;
+      margin: 0 10px;
+      color: white;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      &:hover{
+        background-color: #008ed6;
+        transition: 0.5s;
+      }
+      @include max-screen(812px){
+        width: 130px;
+        font-size: 10px;
+        padding: 12px 22px;
+        margin: 0;
+      }
+      @include max-screen(768px){
+        width: 160px;
+        font-size: 14px;
+        padding: 20px 30px;
+        margin: 0 10px;
+      }
+      @include max-screen(414px){
+        width: 130px;
+        font-size: 10px;
+        padding: 12px 22px;
+      }
+      @include max-screen(320px){
+        width: 120px;
+        font-size: 12px;
+        padding: 10px 15px;
+        margin: 0 5px;
+      }
+    }
+  }
+}
